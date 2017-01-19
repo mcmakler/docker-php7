@@ -18,8 +18,8 @@ RUN pecl install redis \
 && pecl install mongodb \
 && pecl install imagick \
 && docker-php-ext-enable redis mongodb imagick \
-\
-&& apt-get autoremove -y
+
+RUN apt-get autoremove -y
 
 
 # Install Composer
